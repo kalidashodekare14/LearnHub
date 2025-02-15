@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router'
 
-const Home = () => {
+const SignUp = () => {
     return (
         <div className='h-[600px] flex justify-center items-center'>
             <div className='space-y-3 border border-[#ddd]  w-96 p-5'>
@@ -20,9 +21,10 @@ const Home = () => {
                 <div className='text-center'>
                     <button className='btn'>Sign Up</button>
                 </div>
+                <p>Already have an account? <span className='text-[#307bc4]'><Link to={'/'}>Login</Link></span></p>
             </div>
         </div>
     )
 }
 
-export default Home
+export default SignUp
